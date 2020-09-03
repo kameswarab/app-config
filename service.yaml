@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: jenkins-demo
-        image: a4ecd05b844db4fd2883a7f4f7406959-d36767300370c1d2.elb.ap-south-1.amazonaws.com/tekton/jenkins-demo3:v2.5
+        image: 973141472776.dkr.ecr.ap-south-1.amazonaws.com/tekton/jenkins-demo3:v2.5
         args:["--skip-tls-verify"]
         ports:
         - containerPort: 9080
