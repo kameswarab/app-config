@@ -12,9 +12,10 @@ spec:
       labels:
         run: jenkins-demo
     spec:
+      serviceAccountName: internal-kubectl
       containers:
       - name: jenkins-demo
-        image: 973141472776.dkr.ecr.ap-south-1.amazonaws.com/tekton/jenkins-demo3:v3.5
+        image: 973141472776.dkr.ecr.ap-south-1.amazonaws.com/tekton/jenkins-demo3:v3.3
         ports:
         - containerPort: 8090
 ---
